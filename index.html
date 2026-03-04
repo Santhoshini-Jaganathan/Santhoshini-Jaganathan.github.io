@@ -9,12 +9,12 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: #000000; 
-      color: #ffffff; 
+      background: #000000; /* Full black background */
+      color: #ffffff; /* White text */
       line-height: 1.6;
     }
     header {
-      background: #000000; 
+      background: #000000; /* Black header */
       color: #ffffff;
       padding: 60px 20px;
       text-align: center;
@@ -27,21 +27,44 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-      background: #0d47a1; 
+      background: #0d47a1; /* Blue section background */
       margin-bottom: 20px;
       border-radius: 10px;
     }
     h2 {
-      color: #ffffff;
+      color: #ffffff; /* White section headings */
       margin-bottom: 20px;
-    }}
+    }
     .skills span { display: inline-block; background: #c8e6c9; padding: 8px 15px; margin: 8px; border-radius: 20px; font-size: 0.9rem; }
-    .project { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .project {
+      background: #111111; /* Dark card background */
+      color: #ffffff; /* White text */
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .project h3 {
+      color: #4fc3f7;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
     .project h3 { margin-bottom: 10px; }
     .btn { display: inline-block; padding: 10px 20px; background: #2e7d32; color: white; border-radius: 5px; text-decoration: none; margin-top: 10px; }
     footer { text-align: center; padding: 20px; background: #0b1f3a; color: white; }
 
-   
+    /* About Section Modern Layout */
     .about-section {
       background: #0b1f3a;
       color: white;
